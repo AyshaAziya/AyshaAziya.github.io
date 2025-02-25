@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Showcase</title>
+    <title>Your Website Title</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,22 +55,13 @@
             font-size: 16px;
             overflow-x: auto;
         }
-
-        /* Cat image styling */
-        .cat-image {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            width: 150px; /* Adjust size as needed */
-            z-index: 1000;
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Coding Showcase</h1>
-        <p>Check out some of my favorite coding projects and snippets!</p>
+        <h1>Welcome to My Website</h1>
+        <p>Here is a simple template to get you started!</p>
     </header>
 
     <nav>
@@ -82,69 +73,21 @@
     </nav>
 
     <main>
-        <section class="coding-content">
-            <h2>Project 1: Simple Calculator (JavaScript)</h2>
-            <pre>
-                // Simple JavaScript Calculator
-
-                function add(a, b) {
-                    return a + b;
-                }
-
-                function subtract(a, b) {
-                    return a - b;
-                }
-
-                function multiply(a, b) {
-                    return a * b;
-                }
-
-                function divide(a, b) {
-                    if (b !== 0) {
-                        return a / b;
-                    } else {
-                        return "Cannot divide by zero";
-                    }
-                }
-
-                console.log(add(5, 3));  // Output: 8
-            </pre>
+        <section>
+            <h2>About Us</h2>
+            <p>This is where you can introduce your website, your mission, or your services. Customize this section with the content that fits your site’s purpose.</p>
         </section>
 
-        <section class="coding-content">
-            <h2>Project 2: To-Do List (HTML, CSS, JavaScript)</h2>
-            <pre>
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Simple To-Do List</title>
-                </head>
-                <body>
-                    <ul id="todo-list"></ul>
-                    <input type="text" id="todo-input" placeholder="Add a new task">
-                    <button onclick="addTask()">Add</button>
+        <section>
+            <h2>Our Services</h2>
+            <p>Share details about the services you offer here. For example, you can list products, services, or other key information about your business or project.</p>
+        </section>
 
-                    <script>
-                        function addTask() {
-                            var input = document.getElementById('todo-input').value;
-                            if (input) {
-                                var li = document.createElement('li');
-                                li.textContent = input;
-                                document.getElementById('todo-list').appendChild(li);
-                                document.getElementById('todo-input').value = '';
-                            }
-                        }
-                    </script>
-                </body>
-                </html>
-            </pre>
+        <section>
+            <h2>Contact Us</h2>
+            <p>If you'd like to get in touch, feel free to reach out to us through our contact form or email us directly!</p>
         </section>
     </main>
-
-    <!-- Cat image -->
-    <img src="cat.png" alt="Cute Cat" class="cat-image">
 
     <footer>
         <p>&copy; 2025 Your Website Name. All rights reserved.</p>
