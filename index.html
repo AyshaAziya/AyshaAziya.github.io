@@ -1,97 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>My Portfolio Website</title>
     <style>
         body {
+            background-color: #FFFFFF;
+            color: #000000;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
+
         header {
-            background-color: #333;
-            color: white;
-            padding: 15px 0;
+            background-color: #516051;
+            padding: 20px;
             text-align: center;
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #FFFFFF;
+        }
+
         nav {
             text-align: center;
-            background-color: #444;
+            background-color: #516051;
             padding: 10px 0;
         }
+
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #FFFFFF;
             text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 0 15px;
         }
-        main {
+
+        nav a:hover {
+            background-color: #8C8C8C;
+        }
+
+        .container {
             padding: 20px;
         }
-        footer {
+
+        .slideshow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .slideshow img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .slideshow img:hover {
+            transform: scale(1.1);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-card {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%;
             text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
-        .coding-content {
-            background-color: #fff;
+
+        .project-card a {
+            color: #516051;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
             padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #f4f4f4;
+            border-radius: 10px;
         }
-        pre {
-            background-color: #2e2e2e;
-            color: #fff;
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
             padding: 10px;
-            border-radius: 8px;
-            font-size: 16px;
-            overflow-x: auto;
+            margin: 10px 0;
+            border: 1px solid #516051;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #516051;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .contact-form button:hover {
+            background-color: #8C8C8C;
+        }
+
+        .page-description {
+            font-size: 1.2em;
+            color: #516051;
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>Here is a simple template to get you started!</p>
-    </header>
+<header>
+    <h1>Welcome to My Portfolio</h1>
+</header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="coding.html">Coding</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <main>
-        <section>
-            <h2>About Us</h2>
-            <p>This is where you can introduce your website, your mission, or your services. Customize this section with the content that fits your site’s purpose.</p>
-        </section>
+<!-- Home Page -->
+<section id="home" class="container">
+    <div class="page-description">
+        <p>This is the Home page. It contains links to all the content pages in a slideshow. Clicking on any link will take you to the respective page.</p>
+    </div>
+    <div class="slideshow">
+        <img src="https://via.placeholder.com/800x400/516051/FFFFFF?text=Home" alt="Home Slideshow Image">
+    </div>
+    <div style="text-align: center;">
+        <a href="#about">About Me</a> | 
+        <a href="#projects">Projects</a> | 
+        <a href="#contact">Contact</a>
+    </div>
+</section>
 
-        <section>
-            <h2>Our Services</h2>
-            <p>Share details about the services you offer here. For example, you can list products, services, or other key information about your business or project.</p>
-        </section>
+<!-- About Me Page -->
+<section id="about" class="container">
+    <div class="page-description">
+        <p>This is the About Me page. I am a college student trying my hand at coding. I aim to build my career as a beginner coder and make my way through the world with the skills I am learning.</p>
+    </div>
+    <div>
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate college student diving into the world of coding. My goal is to learn and grow in the field of programming, and I aim to turn my curiosity into a successful career. I believe in constantly improving myself, and I’m excited about the journey ahead!</p>
+    </div>
+</section>
 
-        <section>
-            <h2>Contact Us</h2>
-            <p>If you'd like to get in touch, feel free to reach out to us through our contact form or email us directly!</p>
-        </section>
-    </main>
+<!-- Projects Page -->
+<section id="projects" class="container">
+    <div class="page-description">
+        <p>This is the Projects page. Here are some of the coding projects I’ve worked on. Click the links to check them out!</p>
+    </div>
+    <div class="projects">
+        <div class="project-card">
+            <a href="https://trinket.io/python/db1619261e6c" target="_blank">Project 1</a>
+        </div>
+        <div class="project-card">
+            <a href="https://trinket.io/python/71f07c72bdbd" target="_blank">Project 2</a>
+        </div>
+        <div class="project-card">
+            <a href="https://trinket.io/python/71b7362eb6c3" target="_blank">Project 3</a>
+        </div>
+        <div class="project-card">
+            <a href="https://trinket.io/python/6098aac001b9" target="_blank">Project 4</a>
+        </div>
+        <div class="project-card">
+            <a href="https://trinket.io/python/73a15a6c0b07" target="_blank">Project 5</a>
+        </div>
+        <div class="project-card">
+            <a href="https://trinket.io/python/9c8338741ac7" target="_blank">Project 6</a>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
-    </footer>
+<!-- Contact Page -->
+<section id="contact" class="container">
+    <div class="page-description">
+        <p>This is the Contact page. Please fill out the form below to get in touch with me!</p>
+    </div>
+    <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
 
 </body>
+
 </html>
